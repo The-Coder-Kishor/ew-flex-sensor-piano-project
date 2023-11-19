@@ -95,4 +95,52 @@ int flag5 = 0;
   else{
     flag1 = 0;
   }
+
+  if(sensorValue2 < THRESHOLD2){
+    if(flag2 == 0){
+      flag2 = 1; // it is playing now
+      tone(buzzer, mel2, wholenote2 * 1);  
+      delay(wholenote2);  
+      noTone(buzzer);  
+    }
+  }
+  else{
+    flag2 = 0;
+  }
+
+  if(sensorValue3 < THRESHOLD){
+    if(flag3 == 0){
+      flag3 = 1; // it is playing now
+      tone(buzzer, mel3, wholenote3 * 1);  
+      delay(wholenote3);  
+      noTone(buzzer);  
+    }
+  }
+  else{
+    flag3 = 0;
+  }
+
+  if(sensorValue4 < THRESHOLD){
+    if(flag4 == 0){
+      flag4 = 1; // it is playing now
+      tone(buzzer, mel4, wholenote4 * 1);  
+      delay(wholenote4);  
+      noTone(buzzer);  
+    }
+  }
+  else{
+    flag4 = 0;
+  }
+
+  if(sensorValue5 < THRESHOLD){
+    if(flag5 == 0){
+      flag5 = 1; // it is playing now
+      tone(buzzer, mel5, wholenote5 * 1);  
+      delay(wholenote5);  
+      noTone(buzzer);  
+    }
+  }
+  else{
+    flag5 = 0;
+  }
  }
